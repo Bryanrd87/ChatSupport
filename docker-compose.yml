@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  chatsupport.api:
+    image: chatsupport.api
+    build: 
+      context: .
+      dockerfile: ChatSupportAPI/Dockerfile
+    container_name: chatsupport_api_container
+    ports:
+      - "8080:80"
+      - "7059:7059"
+    depends_on:
+      - rabbitmq
+    environment:
+      - "RabbitMQ__HostName=rabbitmq"
+      - "RabbitMQ__Port=5672"
+      - "RabbitMQ__UserName=guest"
+      - "RabbitMQ__Password=guest"
+      - "RabbitMQ__VirtualHost=/"
+    networks:
+      - chatsupport_network
+
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    container_name: rabbitmq_container
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    networks:
+      - chatsupport_network
+
+networks:
+  chatsupport_network:
+    driver: bridge

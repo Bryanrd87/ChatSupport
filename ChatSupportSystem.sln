@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatSupport.WebAPI", "ChatSupportAPI\ChatSupport.WebAPI.csproj", "{8A6091F1-1ED2-4300-A381-D0F876CA41E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatSupport.Domain", "ChatSupport.Domain\ChatSupport.Domain.csproj", "{F513BCAF-C423-4C8A-99CA-B3B3F1339870}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatSupport.Persistence", "ChatSupport.Persistence\ChatSupport.Persistence.csproj", "{B9FC32FE-492C-4C76-8A70-98BE8A5E4403}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6CF65675-3E30-4796-A4C9-5756E203C2CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatSupport.Application", "ChatSupport.Application\ChatSupport.Application.csproj", "{7172EF8F-88B5-4DCE-9260-C0409012299D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B548FBC-35B3-4ED7-82CF-1AA52CA8754D}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{565CB0A4-A606-4043-8A82-A85108597413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatSupport.Application.UnitTests", "ChatSupport.Application.UnitTests\ChatSupport.Application.UnitTests.csproj", "{F0F5D9A7-435D-4418-8CA6-36362E3FEE46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A6091F1-1ED2-4300-A381-D0F876CA41E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6091F1-1ED2-4300-A381-D0F876CA41E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6091F1-1ED2-4300-A381-D0F876CA41E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6091F1-1ED2-4300-A381-D0F876CA41E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F513BCAF-C423-4C8A-99CA-B3B3F1339870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F513BCAF-C423-4C8A-99CA-B3B3F1339870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F513BCAF-C423-4C8A-99CA-B3B3F1339870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F513BCAF-C423-4C8A-99CA-B3B3F1339870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FC32FE-492C-4C76-8A70-98BE8A5E4403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FC32FE-492C-4C76-8A70-98BE8A5E4403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FC32FE-492C-4C76-8A70-98BE8A5E4403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FC32FE-492C-4C76-8A70-98BE8A5E4403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7172EF8F-88B5-4DCE-9260-C0409012299D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7172EF8F-88B5-4DCE-9260-C0409012299D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7172EF8F-88B5-4DCE-9260-C0409012299D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7172EF8F-88B5-4DCE-9260-C0409012299D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0F5D9A7-435D-4418-8CA6-36362E3FEE46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0F5D9A7-435D-4418-8CA6-36362E3FEE46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0F5D9A7-435D-4418-8CA6-36362E3FEE46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0F5D9A7-435D-4418-8CA6-36362E3FEE46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A6091F1-1ED2-4300-A381-D0F876CA41E5} = {6CF65675-3E30-4796-A4C9-5756E203C2CC}
+		{F513BCAF-C423-4C8A-99CA-B3B3F1339870} = {6CF65675-3E30-4796-A4C9-5756E203C2CC}
+		{B9FC32FE-492C-4C76-8A70-98BE8A5E4403} = {6CF65675-3E30-4796-A4C9-5756E203C2CC}
+		{7172EF8F-88B5-4DCE-9260-C0409012299D} = {6CF65675-3E30-4796-A4C9-5756E203C2CC}
+		{F0F5D9A7-435D-4418-8CA6-36362E3FEE46} = {565CB0A4-A606-4043-8A82-A85108597413}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CCC0B94-D500-4B16-8208-D50DE28FD656}
+	EndGlobalSection
+EndGlobal

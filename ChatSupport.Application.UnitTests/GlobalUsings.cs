@@ -1,0 +1,13 @@
+global using Xunit;
+global using ChatSupport.Application.Features.Sessions.Commands;
+global using ChatSupport.Domain.UoW;
+global using Moq;
+global using ChatSupport.Application.Contracts.RabbitMq;
+global using ChatSupport.Domain;
+global using Shouldly;
+global using ChatSupport.Domain.Repositories;
+global using ChatSupport.Application.Models;
+global using ChatSupport.Application.Exceptions;
+global using ChatSupport.Application.Features.RabbitMq;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.Logging;
