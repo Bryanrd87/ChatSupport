@@ -1,9 +1,0 @@
-# Use an official RabbitMQ image as the base image (Linux-based)
-FROM rabbitmq:3.11.7-management
-
-# Expose ports for RabbitMQ
-EXPOSE 5672 15672
-
-# Set environment variables (optional)
-ENV RABBITMQ_DEFAULT_USER=guest
-ENV RABBITMQ_DEFAULT_PASS=guest
