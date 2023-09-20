@@ -73,3 +73,6 @@ To test the ConsumeChatSessionQueue method in the RabbitMQ service, refer to the
 
 ## API Documentation with Swagger
 The project features Swagger integration for API documentation. You can access the Swagger UI at the /swagger endpoint to test the APIs and view the documentation.
+
+## Initial Data Seeding
+Due to the complexity of the task and time constraints, I did not add specific endpoints for managing users and agents. However, I have ensured that you can still experience the core functionalities by integrating initial data seeding into the application.
